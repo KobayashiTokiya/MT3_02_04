@@ -696,7 +696,6 @@ void DrawTriangle(const Triangle& triangle, const Matrix4x4& viewProjectionMatri
 	
 	for (int i = 0; i < 3; ++i)
 	{
-		// ワールド→ビュー→プロジェクション→ビューポート
 		Vector3 v = Transform( triangle.vertices[i],viewProjectionMatrix);
 		v = Transform(v, viewportMatrix);
 
